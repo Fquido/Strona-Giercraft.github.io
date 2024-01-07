@@ -28,7 +28,7 @@ body
 }
 
 .preloader {
-    margin: 50% auto 40px;
+    margin: 30% auto 40px;
     transform: translateZ(0);
     animation-delay: -0.16s;
 }
