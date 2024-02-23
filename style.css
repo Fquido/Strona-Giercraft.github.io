@@ -1,0 +1,51 @@
+/**
+ * CSS3 Preloaders
+ * https://danielpietrasik.pl/css3-preloaders/
+ **/
+
+body
+{
+  background-color: #1c1c1c; 
+}
+
+.preloader,
+.preloader:before,
+.preloader:after {
+    background: #fff;
+    animation: animation 1s infinite ease-in-out;
+    width: 12px;
+}
+
+.preloader:before,
+.preloader:after {
+    position: absolute;
+    content: '';
+}
+
+.preloader:before {
+    left: -20px;
+    animation-delay: -0.32s;
+}
+
+.preloader {
+    margin: 30% auto 40px;
+    transform: translateZ(0);
+    animation-delay: -0.16s;
+}
+
+.preloader:after {
+    left: 20px;
+}
+
+@keyframes animation {
+    0%,
+    80%,
+    100% {
+        box-shadow: 0 0 #fff;
+        height: 60px;
+    }
+    40% {
+        box-shadow: 0 -30px #fff;
+        height: 100px;
+    }
+}
